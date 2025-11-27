@@ -1,139 +1,116 @@
 # Bank_Management
-📚 Library Management 
+🏦 Bank Management System
 
-📝 Project Overview
+A Console-Based Banking Application in C
 
-The Library Management System (LMS) is a console-based C application developed to manage the basic operations of a library.
-It allows the librarian to maintain book records, issue/return books, search books, delete books, and store data permanently using file handling.
+📌 📖 Overview
 
-This project is ideal for:
+The Bank Management System is a console-based C project that allows users to perform essential banking operations such as creating accounts, depositing/withdrawing money, checking balances, updating account details, and securely storing records in files.
 
-Mini projects
+This project is ideal for beginners learning file handling and for mini-project submissions in colleges.
 
-Academic submissions
+🚀 ✨ Features
+✔ Account Operations
 
-GitHub portfolio
+Create a new bank account
 
-Learning file handling & structured programming
+Display existing account details
 
-🚀 Features
-✔ 1. Add New Book
+Update customer information
 
-Add complete details:
+Close/delete an account
 
-Book ID
+✔ Transactions
 
-Title
+Deposit money
 
-Author
+Withdraw money
 
-Quantity
+Check account balance
 
-Stored permanently using binary file handling (library.dat).
+Transaction validation (no negative/over-limit withdrawals)
 
-✔ 2. Display All Books
+✔ File Handling
 
-Shows a complete list of books in a structured table format:
+Data stored in files for persistence
 
-ID
+Secure read/write operations
 
-Title
+Supports multiple user accounts
 
-Author
+✔ Additional Advanced Features
 
-Quantity
+Unique account number generation
 
-Issued copies
+Input validation for safer data entry
 
-✔ 3. Search Book
+Transaction history logging (if included)
 
-Search by Book ID and get full details instantly.
+Modular functions for clean code
 
-✔ 4. Issue Book
+Menu-driven interface for ease of use
 
-Issues a book only if available
+Error-free and optimized C code
 
-Updates the total issued count
+📁 Project Structure
+Bank_Management_System/
+│
+├── bank.c               # Main program code
+├── accounts.dat         # File storing account records
+├── transactions.log     # Optional: logs transactions
+├── README.md            # Project documentation
+└── compile_run.sh       # Script to compile & run (optional)
 
-Prevents issuing if all copies are already issued
+⚙️ How It Works
 
-✔ 5. Return Book
+Program displays a menu
 
-Accepts returned books
+User selects an operation
 
-Decreases issued count
+For account-related operations, user enters account number
 
-Prevents invalid returns
+Program reads/writes details from accounts.dat
 
-✔ 6. Delete Book
-
-Removes a book permanently from the library database using a safe temporary-file method.
-
-✔ 7. Permanent Storage
-
-All data is stored in:
-
-library.dat
-
-
-Records remain saved even after the program closes.
+Transaction results are displayed with proper validation
 
 🛠 Technologies Used
+Technology	Purpose
+C Programming	Core logic and operations
+File Handling	Persistent storage of account records
+Structs	Storing account information
+Functions	Clean and modular design
+🏁 How to Run
+1. Compile the Program
+gcc bank.c -o bank
 
-C programming
+2. Run the Program
+./bank
 
-Structures
+🧪 Sample Functionalities
+Creating an Account
+Enter Name: Mahi
+Enter Address: Hyderabad
+Enter Initial Deposit: 5000
+Account Created Successfully!
+Account Number: 100234
 
-File Handling (Binary Files)
+Depositing Money
+Enter Account Number: 100234
+Enter Amount to Deposit: 2000
+Deposit Successful! New Balance: 7000
 
-Modular Programming
+Withdrawing Money
+Enter Account Number: 100234
+Enter Amount to Withdraw: 10000
+Error: Insufficient Balance!
 
-📂 Project Structure
-/LibraryManagementSystem
-   ├── library.c          # main program file
-   ├── library.dat        # auto-created database file
-   ├── README.md          # documentation
+🌟 Why This Project Is Useful
 
-🧩 Data Structure Used
-
-Each book is stored as a structure:
-
-Field	Description
-id	Unique numeric ID
-title	Name of the book
-author	Author of the book
-quantity	Total copies
-issued	Number of copies that are currently issued
-▶️ How to Run
-Windows / Linux / MacOS
-gcc library.c -o library
-./library
-
-Or simply run in CodeBlocks / Dev C / VS Code.
-📘 Sample Output
-========================================
-        LIBRARY MANAGEMENT SYSTEM        
-========================================
-1. Add Book
-2. Display All Books
-3. Search Book
-4. Issue Book
-5. Return Book
-6. Delete Book
-7. Exit
-Enter your choice:
-
-⭐ Why This Project is Useful
-
-Demonstrates use of file handling
-
-Realistic library operations
-
-Simple and structured
-
-Good for college submissions
-
-Easy to extend and upgrade
+✔ Demonstrates file handling
+✔ Great for B.Tech/MCA mini-projects
+✔ Teaches structs, functions, validation
+✔ Can be easily extended into bigger systems
+✔ Fully menu-driven and user-friendly
 
 
 Authoor : Mahesh Babu Baswani
